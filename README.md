@@ -17,7 +17,14 @@ Flags:
 go get github.com/magnusfurugard/texp
 ```
 
+If you've cloned the repo, you can use the `Makefile` if you want:
+```
+# Make sure ~/bin is in your $PATH
+make install
+```
+
 # Examples
+Result strings are automatically generated to cover all combinations.
 ```
 texp "Good @time, how are you @person?" \
     -t @time=day \
