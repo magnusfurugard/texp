@@ -81,5 +81,5 @@ func Execute() {
 
 func init() {
 	tokens = rootCmd.PersistentFlags().StringArrayP("token", "t", []string{}, "tokens to replace with format key=value")
-	outputFormat = rootCmd.PersistentFlags().StringP("output", "o", "json", "output format: json, yaml and raw.")
+	outputFormat = rootCmd.PersistentFlags().StringP("output", "o", "json", "output format: json, yaml and raw")
 }
