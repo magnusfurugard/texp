@@ -11,6 +11,12 @@ Flags:
   -t, --token stringArray   tokens to replace with format key=value
 ```
 
+# Install
+```
+# Make sure you have $GOPATH/bin in your $PATH
+go get github.com/magnusfurugard/texp
+```
+
 # Examples
 ```
 texp "Good @time, how are you @person?" \
@@ -45,10 +51,4 @@ texp "select * from @db.schema.@table;" \
 # select * from dbc.schema.tbl1;
 # select * from dbc.schema.tbl2;
 # select * from dbc.schema.tbl3;
-```
-
-# Install
-```
-# Make sure you have $GOPATH/bin in your $PATH
-go get github.com/magnusfurugard/texp
 ```
