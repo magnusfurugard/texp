@@ -19,7 +19,7 @@ var cases = []struct {
 
 func TestTokens(t *testing.T) {
 	for _, c := range cases {
-		r, _ := Tokens(c.query, c.tokens)
+		_, r := Tokens(c.query, c.tokens)
 		if !reflect.DeepEqual(r, c.expected) {
 			t.Errorf("expected: %v, got: %v", c.expected, r)
 		}
