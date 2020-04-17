@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "texp/cmd"
+import "github.com/magnusfurugard/texp/cmd"
 
 func main() {
 	cmd.Execute()

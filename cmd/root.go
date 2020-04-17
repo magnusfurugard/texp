@@ -20,8 +20,9 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"texp/parse"
-	"texp/printer"
+
+	"github.com/magnusfurugard/texp/parse"
+	"github.com/magnusfurugard/texp/printer"
 
 	"github.com/spf13/cobra"
 )
