@@ -66,7 +66,10 @@ var rootCmd = &cobra.Command{
 		}
 
 		tokens, result := parse.Tokens(args[0], tokens)
-		printer.Print(*outputFormat, tokens, result)
+		err := printer.Print(*outputFormat, tokens, result)
+		if err != nil {
+			return err
+		}
 		return nil
 	},
 }
