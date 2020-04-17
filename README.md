@@ -17,7 +17,7 @@ Flags:
 go get github.com/magnusfurugard/texp
 ```
 
-If you've cloned the repo, you can use the `Makefile` if you want:
+Or, if you've cloned the repo, you can use the `Makefile` if you want:
 ```
 # Make sure ~/bin is in your $PATH
 make install
