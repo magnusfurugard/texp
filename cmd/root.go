@@ -48,9 +48,12 @@ var rootCmd = &cobra.Command{
     -t @person=''`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		if fi, _ := os.Stdin.Stat(); fi.Size() > 0 {
-			reader := bufio.NewReader(os.Stdin)
-			b, _ := reader.ReadString('\n')
-			text := strings.Trim(b, "\r\n")
+			scanner := bufio.NewScanner(os.Stdin)
+			text := ""
+			for scanner.Scan() {
+				text += scanner.Text() + "\n"
+			}
+			text = strings.Trim(text, "\n")
 			if len(text) > 0 {
 				args = append(args, text)
 			}
