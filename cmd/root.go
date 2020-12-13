@@ -39,7 +39,7 @@ var rootCmd = &cobra.Command{
 	Short: "Token-based string expansion",
 	Long:  `Create multiple strings out of a single, token-filled one.`,
 	Example: `  texp "@a@b" -t @a=x -t @a=y -t @b=1
-  texp "@a@a@b" -t @a=1 -t @a=2 @a=3 -t @b=5
+  texp "@a@a@b" -t @a=1 -t @a=2 -t @a=3 -t @b=5
   texp "Good @time, how are you @person?" \
     -t @time=day \
     -t @time=evening \
